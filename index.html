@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Telemedicine Website</title>
+    <link rel="stylesheet" href="styless.css">
+</head>
+<body>
+   <header>
+    <div>
+        <a href="#">Telemedicine</a>
+        <a href="#">About</a>
+        <a href="#">Patients</a>
+        <a href="#">Admissions</a>
+        <a href="#">Discharges</a>
+        <a href="#">Providers</a>
+        <a href="#">Visits</a>
+        <a href="#">Ed-Visits</a>
+    </div>
+   </header> 
+
+   <main>
+    <section class="heading">
+        <h1>Welcome to Telemedicine</h1>
+        <p>Our telemedicine platform provides convenient access to healthcare services from the comfort of your home. Explore our services and learn how we can assist you in managing your health.</p>
+    </section>
+
+    <section class="about">
+        <h2>About Us</h2>
+        <p>We are dedicated to delivering quality healthcare services through advanced telemedicine solutions. Our team of experts is committed to providing accessible and efficient care.</p>
+    </section>
+
+    <section class="services">
+        <h2>Our Services</h2>
+        <ul>
+            <li>Virtual Consultations</li>
+            <li>Online Prescriptions</li>
+            <li>Medical Records Management</li>
+            <li>Specialist Referrals</li>
+        </ul>
+    </section>
+
+    <section class="contact">
+        <h2>Contact Us</h2>
+        <p>If you want to book your appointment, please fill out the form below for further assistance:</p>
+        <form action="">
+            <label for="Name">Enter your full Name:</label>
+            <input type="text" id="Name" name="Name" placeholder="Enter your full Name" required>
+            
+            <label for="PhoneNumber">Enter your Phone Number:</label>
+            <input type="tel" name="PhoneNumber" id="PhoneNumber" placeholder="Enter your phone number" required>
+            
+            <label for="Age">Enter your Age:</label>
+            <input type="number" id="Age" name="Age" placeholder="Enter your age" required>
+            
+            <label for="date">Date to Book Your Appointment:</label>
+            <input type="datetime-local" id="date" name="date" placeholder="Date to book your appointment:" required>
+            
+            <label for="Location">Enter your Location:</label>
+            <input type="text" id="Location" name="Location" placeholder="Enter your location" required>
+            
+            <label for="Illness">What are you suffering from?</label>
+            <input type="text" name="Illness" id="Illness" placeholder="What are you suffering from" required>
+            
+            <label for="Seriousness">Choose the level of seriousness:</label>
+            <select name="Seriousness" id="Seriousness" required>
+                <option value="Very Serious">Very Serious</option>
+                <option value="Serious">Serious</option>
+                <option value="Mild Serious">Mild Serious</option>
+                <option value="Not Very Serious">Not Very Serious</option>
+            </select>
+            
+            <button type="submit">Sign Up</button>
+        </form>
+    </section>
+   </main>
+
+   <footer>
+       <p>&copy; 2024 LucyWambo. All rights reserved.</p>
+   </footer>
+</body>
+</html>
