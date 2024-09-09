@@ -10,6 +10,9 @@ header {
     background-color: #00ffaa;
     padding: 10px 0;
     border-bottom: 1px solid #ddd;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 }
 
 /* Navigation links container */
@@ -17,13 +20,14 @@ header div {
     display: flex;
     justify-content: center;
     align-items: center;
+    flex: 1; 
 }
 
 /* Navigation links styling */
 header a {
     text-decoration: none;
-    color: white;
     padding: 10px 20px;
+    color: #fff;
     font-size: 16px;
     font-weight: bold;
     transition: background-color 0.3s ease;
@@ -35,7 +39,12 @@ header a:hover {
     color: #fff;
 }
 
-/* Main content styling */
+/* Image styling */
+header img {
+    height: 50px;
+    margin-right: 10px; /* Position image on the right side */
+}
+
 main {
     padding: 20px;
     background-color: #f8f9fa;
