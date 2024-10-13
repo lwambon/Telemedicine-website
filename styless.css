@@ -1,164 +1,72 @@
-body {
-    margin: 0;
-    padding: 0;
+*{
     box-sizing: border-box;
-    font-family: Arial, sans-serif;
-}
-
-/* Header styling */
-header {
-    background-color: #00ffaa;
-    padding: 10px 0;
-    border-bottom: 1px solid #ddd;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-}
-
-/* Navigation links container */
-header div {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex: 1; 
-}
-
-/* Navigation links styling */
-header a {
-    text-decoration: none;
-    padding: 10px 20px;
-    color: #fff;
-    font-size: 16px;
-    font-weight: bold;
-    transition: background-color 0.3s ease;
-}
-
-/* Hover effect for navigation links */
-header a:hover {
-    background-color: #b3005a;
-    color: #fff;
-}
-
-/* Image styling */
-header img {
-    height: 50px;
-    margin-right: 10px; /* Position image on the right side */
-}
-
-main {
-    padding: 20px;
-    background-color: #f8f9fa;
-    max-width: 1200px;
-    margin: auto;
-}
-
-/* Section styling */
-section {
-    margin-bottom: 20px;
-}
-
-section h1, section h2 {
-    color: #333;
-}
-
-section p {
-    line-height: 1.6;
-}
-
-.heading {
-    padding: 20px;
-    background-color: #e0f7fa;
-    border-radius: 8px;
-}
-
-.about {
-    padding: 20px;
-    background-color: #ffffff;
-    border-radius: 8px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-}
-
-.services {
-    padding: 20px;
-    background-color: #ffffff;
-    border-radius: 8px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-}
-
-.services h2 {
-    color: #333;
-    margin-bottom: 15px;
-}
-
-.services ul {
-    list-style: none; /* Remove default bullets */
+    margin: 0; 
     padding: 0;
+} 
+html{
+    font-size:62.5%;
 }
 
-.services ul li {
-    position: relative;
-    padding-left: 30px; /* Space for the custom bullet */
-    margin-bottom: 10px;
-    font-size: 16px;
-    line-height: 1.6;
+/*---------------------------header--------------------------*/
+.header-navigation{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content:space-between;
+    align-items:center;
+    padding:2rem;
+    background-color: transparent;
+    overflow: hidden;
+}
+.header-navigation h1{
+    font-size:2rem;
+    text-transform: uppercase;
+    letter-spacing:1px;
 }
 
-.services ul li::before {
-    content: '\2192'; /* Right arrow symbol */
-    position: absolute;
-    left: 0;
-    color: #00ffaa;
-    font-size: 20px;
-    line-height: 1.6;
+.nav-list{
+    text-decoration: none;
+    list-style: none;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2rem;
 }
 
-
-.contact {
-    padding: 20px;
-    background-color: #adabab;
-    border-radius: 8px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-    max-width: 600px;
-    margin: auto;
+a{
+    text-decoration: none;
+    font-size: 1.8rem;
+    color:black;
 }
-
-form label {
-    display: block;
-    margin: 10px 0 5px;
-    font-weight: bold;
-}
-
-form input, form select {
-    width: calc(100% - 22px);
-    padding: 10px;
-    margin-bottom: 15px;
-    border: 1px solid #ddd;
-    border-radius: 4px;
-}
-
-form button {
-    background-color: #00ffaa;
-    color: white;
-    border: none;
-    padding: 15px;
-    font-size: 16px;
-    font-weight: bold;
-    border-radius: 4px;
+a:hover{
+    color: blueviolet;
     cursor: pointer;
-    transition: background-color 0.3s ease;
+}
+/*----------------------Heros styling------------------------*/
+.heros-conatiner{
+    background-image: linear-gradient(rgba(0, 0, 0, .8), rgba(0, 0, 0, .9)), url(./images/hero.webp);
+
+    height: 80vh;
+    background-position:bottom;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    color: #fff;
 }
 
-form button:hover {
-    background-color: #127ba5;
-}
-
-/* Footer styling */
-footer {
-    background-color: #082e22;
-    color: white;
+.heros-conatiner h1{
     text-align: center;
-    padding: 10px;
-    position: relative;
-    bottom: 0;
-    width: 100%;
+    text-transform: uppercase;
+    font-size: 3rem;
+    color: #fff;
+    margin-bottom: 1.5rem;
 }
+
+.heros-conatiner p{
+    margin: 2rem;
+    font-size: 1.5rem;
+    text-transform: capitalize;
+    text-align: justify;
+
+}
+/*----------------------------------------about us-------------------------------------------*/

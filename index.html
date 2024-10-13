@@ -8,31 +8,40 @@
     <link rel="stylesheet" href="styless.css">
 </head>
 <body>
-   <header>
-    <img src="images/telemedicine.png" alt="telemedicine">
-    <div>
-        <a href="#">About</a>
-        <a href="#">Patients</a>
-        <a href="#">Admissions</a>
-        <a href="#">Discharges</a>
-        <a href="#">Providers</a>
-        <a href="#">Visits</a>
-        <a href="#">Ed-Visits</a>
-    </div>
+   <header class="header-navigation">
+    <h1>Telemedicine</h1>
+
+    <nav class="nav-list">
+        <li class="nav-item"><a href="#about">About</a></li>
+        <li class="nav-item"><a href="#patients">Patients</a></li>
+        <li class="nav-item"><a href="#services">Services</a></li>
+        <li class="nav-item"> <a href="#admission">Admission</a></li>
+        <li class="nav-item"> <a href="#contact">Contact Us</a></li>
+       
+    </nav>
    </header> 
+   <!--------------------------------heros section-------------------------------->
+   <section class="heros-conatiner">
+    <h1>Welcome to Telemedicine Website</h1>
+    <p>Our telemedicine platform provides convenient access to healthcare services
+         from the comfort of your home. </p>
+         <p>Explore our services and learn how we can assist you in managing your health.</p>
+   </section>
 
-   <main>
-    <section class="heading">
-        <h1>Welcome to Telemedicine</h1>
-        <p>Our telemedicine platform provides convenient access to healthcare services from the comfort of your home. Explore our services and learn how we can assist you in managing your health.</p>
-    </section>
 
-    <section class="about">
+
+
+    <section id="about" class="about">
         <h2>About Us</h2>
         <p>We are dedicated to delivering quality healthcare services through advanced telemedicine solutions. Our team of experts is committed to providing accessible and efficient care.</p>
     </section>
 
-    <section class="services">
+    <section id="patients" class="patients">
+        <h2>Patients</h2>
+        <p>Learn more about how we support our patients and provide them with essential healthcare services. This section will guide you through our patient care approach and available resources.</p>
+    </section>
+
+    <section id="services" class="services">
         <h2>Our Services</h2>
         <ul>
             <li>Virtual Consultations</li>
@@ -42,7 +51,13 @@
         </ul>
     </section>
 
-    <section class="contact">
+    <section id="admission" class="admission"></section>
+        <h2>Admission</h2>
+        <p>For those looking to join our telemedicine program, please visit our admission page for more details on the process and requirements.</p>
+        <a href="#">Learn More About Admission</a>
+    </section>
+
+    <section id="contact" class="contact">
         <h2>Contact Us</h2>
         <p>If you want to book your appointment, please fill out the form below for further assistance:</p>
         <form action="">
@@ -75,6 +90,7 @@
             <button type="submit">Sign Up</button>
         </form>
     </section>
+
    </main>
 
    <footer>
