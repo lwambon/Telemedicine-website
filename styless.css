@@ -1,72 +1,144 @@
-*{
-    box-sizing: border-box;
-    margin: 0; 
-    padding: 0;
-} 
-html{
-    font-size:62.5%;
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+html {
+  font-size: 62.5%;
 }
 
 /*---------------------------header--------------------------*/
-.header-navigation{
-    display: flex;
-    flex-wrap: wrap;
-    justify-content:space-between;
-    align-items:center;
-    padding:2rem;
-    background-color: transparent;
-    overflow: hidden;
+.header-navigation {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  padding: 2rem;
+  background-color: transparent;
+  overflow: hidden;
 }
-.header-navigation h1{
-    font-size:2rem;
-    text-transform: uppercase;
-    letter-spacing:1px;
-}
-
-.nav-list{
-    text-decoration: none;
-    list-style: none;
-    display: flex;
-    flex-wrap: wrap;
-    gap: 2rem;
+.header-navigation h1 {
+  font-size: 2rem;
+  text-transform: uppercase;
+  letter-spacing: 1px;
 }
 
-a{
-    text-decoration: none;
-    font-size: 1.8rem;
-    color:black;
+.nav-list {
+  text-decoration: none;
+  list-style: none;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2rem;
 }
-a:hover{
-    color: blueviolet;
-    cursor: pointer;
+
+a {
+  text-decoration: none;
+  font-size: 1.8rem;
+  color: black;
+}
+a:hover {
+  color: blueviolet;
+  cursor: pointer;
 }
 /*----------------------Heros styling------------------------*/
-.heros-conatiner{
-    background-image: linear-gradient(rgba(0, 0, 0, .8), rgba(0, 0, 0, .9)), url(./images/hero.webp);
+.heros-conatiner {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.8)),
+    url(./images/hero.webp);
 
-    height: 80vh;
-    background-position:bottom;
-    align-items: center;
-    justify-content: center;
-    display: flex;
-    flex-direction: column;
-    flex-wrap: wrap;
-    color: #fff;
+  height: 80vh;
+  background-position: bottom;
+  align-items: center;
+  justify-content: center;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  color: #fff;
 }
 
-.heros-conatiner h1{
-    text-align: center;
-    text-transform: uppercase;
-    font-size: 3rem;
-    color: #fff;
-    margin-bottom: 1.5rem;
+.heros-conatiner h1 {
+  text-align: center;
+  text-transform: uppercase;
+  font-size: 3rem;
+  color: #fff;
+  margin-bottom: 1.5rem;
 }
 
-.heros-conatiner p{
-    margin: 2rem;
-    font-size: 1.5rem;
-    text-transform: capitalize;
-    text-align: justify;
-
+.heros-conatiner p {
+  margin: 2rem;
+  font-size: 1.5rem;
+  text-transform: capitalize;
+  text-align: justify;
 }
 /*----------------------------------------about us-------------------------------------------*/
+
+.title {
+  text-align: center;
+  text-transform: uppercase;
+  font-size: 2rem;
+  margin: 2rem auto;
+}
+
+.about-datails {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2rem;
+}
+
+.about-datails p {
+  font-size: 1.8rem;
+  line-height: 1.6;
+  width: 45%;
+  text-align: justify;
+  padding: 1.7rem;
+  box-shadow: 0 0 1rem;
+  margin-left: 1rem;
+}
+.about-image {
+  width: 50%;
+}
+
+.about-image img {
+  width: 80%;
+  border-radius: 0.8rem;
+  margin: 2rem;
+  box-shadow: 0 0 2rem;
+}
+
+/*-----------------services----------------------------------*/
+.services-items {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 4rem;
+  width: 100%;
+  align-items: center;
+  justify-content: center;
+  margin: auto;
+}
+.services-list {
+  width: 50rem;
+  margin: 1.5rem;
+  display: flex;
+  flex-wrap: wrap;
+  box-shadow: 0 0 1.5rem;
+  border-radius: 0.9rem;
+}
+
+.services-list h4 {
+  text-align: center;
+  align-items: center;
+  font-size: 2rem;
+  text-transform: capitalize;
+  margin: 0.9rem auto;
+}
+
+.services-list img {
+  width: 38rem;
+  padding: 3rem;
+  object-fit: cover;
+}
+
+.services-list p {
+  font-size: 1.9rem;
+  text-align: justify;
+  margin: 1rem;
+}

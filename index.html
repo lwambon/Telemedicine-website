@@ -1,100 +1,200 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Telemedicine Website</title>
-    <link rel="shortcut icon" href="images/telemedicine.png" type="image/x-icon">
-    <link rel="stylesheet" href="styless.css">
-</head>
-<body>
-   <header class="header-navigation">
-    <h1>Telemedicine</h1>
+    <link
+      rel="shortcut icon"
+      href="images/telemedicine.png"
+      type="image/x-icon"
+    />
+    <link rel="stylesheet" href="styless.css" />
+  </head>
+  <body>
+    <header class="header-navigation">
+      <h1>Telemedicine</h1>
 
-    <nav class="nav-list">
+      <nav class="nav-list">
         <li class="nav-item"><a href="#about">About</a></li>
         <li class="nav-item"><a href="#patients">Patients</a></li>
         <li class="nav-item"><a href="#services">Services</a></li>
-        <li class="nav-item"> <a href="#admission">Admission</a></li>
-        <li class="nav-item"> <a href="#contact">Contact Us</a></li>
-       
-    </nav>
-   </header> 
-   <!--------------------------------heros section-------------------------------->
-   <section class="heros-conatiner">
-    <h1>Welcome to Telemedicine Website</h1>
-    <p>Our telemedicine platform provides convenient access to healthcare services
-         from the comfort of your home. </p>
-         <p>Explore our services and learn how we can assist you in managing your health.</p>
-   </section>
-
-
-
-
-    <section id="about" class="about">
-        <h2>About Us</h2>
-        <p>We are dedicated to delivering quality healthcare services through advanced telemedicine solutions. Our team of experts is committed to providing accessible and efficient care.</p>
+        <li class="nav-item"><a href="#admission">Admission</a></li>
+        <li class="nav-item"><a href="#contact">Contact Us</a></li>
+      </nav>
+    </header>
+    <!--------------------------------heros section-------------------------------->
+    <section class="heros-conatiner">
+      <h1>Welcome to Telemedicine Website</h1>
+      <p>
+        Our telemedicine platform provides convenient access to healthcare
+        services from the comfort of your home.
+      </p>
+      <p>
+        Explore our services and learn how we can assist you in managing your
+        health.
+      </p>
     </section>
 
+    <!-------------------------------about us------------------------------------>
+
+    <section id="about" class="about">
+      <h2 class="title">About Us</h2>
+      <div class="about-datails">
+        <p>
+          We are dedicated to providing high-quality healthcare services through
+          innovative telemedicine solutions that simplify access to care. Our
+          team of experienced professionals ensures that healthcare is both
+          accessible and personalized, bridging the gap between patients and
+          providers with advanced technology. Our platform allows patients to
+          consult with doctors remotely, reducing the need for travel or long
+          waiting times. Through secure video consultations and digital health
+          tools, we offer comprehensive care across various medical specialties,
+          ensuring patients receive tailored treatment plans from the comfort of
+          their homes. With a focus on improving health outcomes and patient
+          satisfaction, we leverage cutting-edge technology to deliver
+          efficient, responsive care that adapts to the unique needs of each
+          individual. Our goal is to empower patients to manage their health
+          proactively, making quality healthcare accessible anytime, anywhere.
+        </p>
+        <div class="about-image">
+          <img src="images/image1.jpg" alt="about image" />
+        </div>
+      </div>
+    </section>
+
+    <!----------------------------------patients---------------------------------->
     <section id="patients" class="patients">
-        <h2>Patients</h2>
-        <p>Learn more about how we support our patients and provide them with essential healthcare services. This section will guide you through our patient care approach and available resources.</p>
+      <h2 class="title">Patients</h2>
+      <p>
+        Learn more about how we support our patients and provide them with
+        essential healthcare services. This section will guide you through our
+        patient care approach and available resources.
+      </p>
     </section>
 
     <section id="services" class="services">
-        <h2>Our Services</h2>
-        <ul>
-            <li>Virtual Consultations</li>
-            <li>Online Prescriptions</li>
-            <li>Medical Records Management</li>
-            <li>Specialist Referrals</li>
-        </ul>
+      <h2 class="title">Our Services</h2>
+      <div class="services-items">
+        <div class="services-list">
+          <h4>Virtual Consultations</h4>
+          <img src="images/images6.jpeg" alt="virtual consultations" />
+          <p>
+            Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+            Voluptatem, explim
+          </p>
+        </div>
+        <div class="services-list">
+          <h4>Online Prescriptions</h4>
+          <img src="images/image5.jpeg" alt="prescription image" />
+          <p>
+            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Doloribus,
+            ad?
+          </p>
+        </div>
+        <div class="services-list">
+          <h4>Medical Records Management</h4>
+          <img src="images/image7.webp" alt="medical record management" />
+          <p>
+            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Mollitia,
+            quisquam.
+          </p>
+        </div>
+        <div class="services-list">
+          <h4>Specialist Referrals</h4>
+          <img src="images/image8.jpg" alt="specialist" />
+          <p>
+            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Mollitia,
+            velit.
+          </p>
+        </div>
+      </div>
     </section>
 
-    <section id="admission" class="admission"></section>
-        <h2>Admission</h2>
-        <p>For those looking to join our telemedicine program, please visit our admission page for more details on the process and requirements.</p>
-        <a href="#">Learn More About Admission</a>
+    <section id="admission" class="admission">
+      <h2>Admission</h2>
+      <p>
+        For those looking to join our telemedicine program, please visit our
+        admission page for more details on the process and requirements.
+      </p>
+      <a href="#">Learn More About Admission</a>
     </section>
 
     <section id="contact" class="contact">
-        <h2>Contact Us</h2>
-        <p>If you want to book your appointment, please fill out the form below for further assistance:</p>
-        <form action="">
-            <label for="Name">Enter your full Name:</label>
-            <input type="text" id="Name" name="Name" placeholder="Enter your full Name" required>
-            
-            <label for="PhoneNumber">Enter your Phone Number:</label>
-            <input type="tel" name="PhoneNumber" id="PhoneNumber" placeholder="Enter your phone number" required>
-            
-            <label for="Age">Enter your Age:</label>
-            <input type="number" id="Age" name="Age" placeholder="Enter your age" required>
-            
-            <label for="date">Date to Book Your Appointment:</label>
-            <input type="datetime-local" id="date" name="date" placeholder="Date to book your appointment:" required>
-            
-            <label for="Location">Enter your Location:</label>
-            <input type="text" id="Location" name="Location" placeholder="Enter your location" required>
-            
-            <label for="Illness">What are you suffering from?</label>
-            <input type="text" name="Illness" id="Illness" placeholder="What are you suffering from" required>
-            
-            <label for="Seriousness">Choose the level of seriousness:</label>
-            <select name="Seriousness" id="Seriousness" required>
-                <option value="Very Serious">Very Serious</option>
-                <option value="Serious">Serious</option>
-                <option value="Mild Serious">Mild Serious</option>
-                <option value="Not Very Serious">Not Very Serious</option>
-            </select>
-            
-            <button type="submit">Sign Up</button>
-        </form>
+      <h2>Contact Us</h2>
+      <p>
+        If you want to book your appointment, please fill out the form below for
+        further assistance:
+      </p>
+      <form action="">
+        <label for="Name">Enter your full Name:</label>
+        <input
+          type="text"
+          id="Name"
+          name="Name"
+          placeholder="Enter your full Name"
+          required
+        />
+
+        <label for="PhoneNumber">Enter your Phone Number:</label>
+        <input
+          type="tel"
+          name="PhoneNumber"
+          id="PhoneNumber"
+          placeholder="Enter your phone number"
+          required
+        />
+
+        <label for="Age">Enter your Age:</label>
+        <input
+          type="number"
+          id="Age"
+          name="Age"
+          placeholder="Enter your age"
+          required
+        />
+
+        <label for="date">Date to Book Your Appointment:</label>
+        <input
+          type="datetime-local"
+          id="date"
+          name="date"
+          placeholder="Date to book your appointment:"
+          required
+        />
+
+        <label for="Location">Enter your Location:</label>
+        <input
+          type="text"
+          id="Location"
+          name="Location"
+          placeholder="Enter your location"
+          required
+        />
+
+        <label for="Illness">What are you suffering from?</label>
+        <input
+          type="text"
+          name="Illness"
+          id="Illness"
+          placeholder="What are you suffering from"
+          required
+        />
+
+        <label for="Seriousness">Choose the level of seriousness:</label>
+        <select name="Seriousness" id="Seriousness" required>
+          <option value="Very Serious">Very Serious</option>
+          <option value="Serious">Serious</option>
+          <option value="Mild Serious">Mild Serious</option>
+          <option value="Not Very Serious">Not Very Serious</option>
+        </select>
+
+        <button type="submit">Sign Up</button>
+      </form>
     </section>
 
-   </main>
-
-   <footer>
-       <p>&copy; 2024 LucyWambo. All rights reserved.</p>
-   </footer>
-</body>
+    <footer>
+      <p>&copy; 2024 LucyWambo. All rights reserved.</p>
+    </footer>
+  </body>
 </html>
