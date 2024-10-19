@@ -348,3 +348,121 @@ footer{
   font-size: 1.9rem;
   max-width: 100%;
 }
+
+
+@media screen and (min-width: 1024px) {
+  
+  .about-datails p {
+    width: 45%;
+  }
+  .about-image {
+    width: 50%;
+  }
+  .services-overview,
+  .book-appointment,
+  .live-chat {
+    width: 50rem;
+  }
+  .appointment-form {
+    width: 70rem;
+  }
+  .contact-form {
+    width: 50%;
+  }
+}
+
+
+@media screen and (max-width: 1024px) and (min-width: 768px) {
+  .about-datails {
+    flex-direction: column;
+    align-items: center;
+  }
+  .about-datails p {
+    width: 80%;
+    margin-left: 0;
+  }
+  .about-image img {
+    width: 100%;
+  }
+
+  .services-overview,
+  .book-appointment,
+  .live-chat,
+  .services-list,
+  .contact-form {
+    width: 80%;
+  }
+
+  .appointment-form {
+    width: 90%;
+  }
+}
+
+
+@media screen and (max-width: 768px) {
+  .header-navigation {
+    flex-direction: column;
+  }
+
+  .nav-list {
+    flex-direction: column;
+    gap: 1rem;
+  }
+
+  .heros-conatiner h1 {
+    font-size: 2.5rem;
+  }
+
+  .heros-conatiner p {
+    font-size: 1.4rem;
+  }
+
+  .about-datails {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .about-datails p {
+    width: 90%;
+    margin-left: 0;
+  }
+
+  .about-image img {
+    width: 100%;
+  }
+
+  .patients-container {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .services-overview,
+  .book-appointment,
+  .live-chat,
+  .services-list,
+  .contact-form {
+    width: 100%;
+  }
+
+  .appointment-form {
+    width: 100%;
+  }
+
+  .services-items {
+    flex-direction: column;
+    gap: 2rem;
+  }
+
+  .services-list img {
+    width: 100%;
+    padding: 1rem;
+  }
+  
+  .services-list p {
+    font-size: 1.7rem;
+  }
+
+  footer {
+    font-size: 1.6rem;
+  }
+}
