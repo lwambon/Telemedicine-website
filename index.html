@@ -19,7 +19,6 @@
         <li class="nav-item"><a href="#about">About</a></li>
         <li class="nav-item"><a href="#patients">Patients</a></li>
         <li class="nav-item"><a href="#services">Services</a></li>
-        <li class="nav-item"><a href="#admission">Admission</a></li>
         <li class="nav-item"><a href="#contact">Contact Us</a></li>
       </nav>
     </header>
@@ -64,133 +63,192 @@
     </section>
 
     <!----------------------------------patients---------------------------------->
-    <section id="patients" class="patients">
-      <h2 class="title">Patients</h2>
-      <p>
-        Learn more about how we support our patients and provide them with
-        essential healthcare services. This section will guide you through our
-        patient care approach and available resources.
-      </p>
-    </section>
-
-    <section id="services" class="services">
-      <h2 class="title">Our Services</h2>
-      <div class="services-items">
-        <div class="services-list">
-          <h4>Virtual Consultations</h4>
-          <img src="images/images6.jpeg" alt="virtual consultations" />
-          <p>
-            Lorem ipsum dolor, sit amet consectetur adipisicing elit.
-            Voluptatem, explim
-          </p>
+    <section class="patients-section">
+      <h2 class="title">patients</h2>
+      <div class="patients-container ">
+      
+        <div class="services-overview">
+          <h3>Available Services</h3>
+          <ul>
+            <li>Virtual Consultations with Doctors</li>
+            <li>Online Prescriptions and Medication Delivery</li>
+            <li>Access to Medical Records</li>
+            <li>Specialist Referrals</li>
+          </ul>
         </div>
-        <div class="services-list">
-          <h4>Online Prescriptions</h4>
-          <img src="images/image5.jpeg" alt="prescription image" />
-          <p>
-            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Doloribus,
-            ad?
-          </p>
-        </div>
-        <div class="services-list">
-          <h4>Medical Records Management</h4>
-          <img src="images/image7.webp" alt="medical record management" />
-          <p>
-            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Mollitia,
-            quisquam.
-          </p>
-        </div>
-        <div class="services-list">
-          <h4>Specialist Referrals</h4>
-          <img src="images/image8.jpg" alt="specialist" />
-          <p>
-            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Mollitia,
-            velit.
-          </p>
+       
+        <div class="live-chat">
+          <h3>Chat with Us</h3>
+          <p>Have any questions? Chat with our support team for assistance.</p>
+          <button onclick="openChat()">Start Chat</button>
         </div>
       </div>
+    
+        <div class="book-appointment">
+          <h3>Book an Appointment</h3>
+          <form action="#" class="appointment-form">
+            <label for="patient-name">Full Name:</label>
+            <input
+              type="text"
+              id="patient-name"
+              name="patient-name"
+              placeholder="Enter your full name"
+              required
+            />
+    
+            <label for="appointment-date">Appointment Date:</label>
+            <input
+              type="datetime-local"
+              id="appointment-date"
+              name="appointment-date"
+              required
+            />
+    
+            <label for="doctor-selection">Choose a Doctor:</label>
+            <select name="doctor-selection" id="doctor-selection" required>
+              <option value="general">General Practitioner</option>
+              <option value="cardiology">Cardiologist</option>
+              <option value="pediatrics">Pediatrician</option>
+              <option value="dermatology">Dermatologist</option>
+            </select>
+    
+            <label for="health-concern">Health Concern:</label>
+            <textarea
+              id="health-concern"
+              name="health-concern"
+              placeholder="Briefly describe your health concern"
+              rows="4"
+              required
+            ></textarea>
+    
+            <button type="submit">Book Appointment</button>
+          </form>
+        </div>
+        <script>
+          function openChat() {
+            alert('Starting chat with support...');
+            
+          }
+        </script>
     </section>
+    
+      </div>
+    </section>
+<!---------------------------------------services section------------------------------------>
+<section id="services" class="services">
+  <h2 class="title">Our Services</h2>
+  <div class="services-items">
 
-    <section id="admission" class="admission">
-      <h2>Admission</h2>
-      <p>
-        For those looking to join our telemedicine program, please visit our
-        admission page for more details on the process and requirements.
-      </p>
-      <a href="#">Learn More About Admission</a>
-    </section>
+    <div class="services-list">
+      <h4>Virtual Consultations</h4>
+      <img src="images/images6.jpeg" alt="Virtual Consultations" />
+      <p>Speak with healthcare professionals in real-time from the comfort of your home.</p>
+      <button>Book Appointment</button>
+    </div>
+    
+    <div class="services-list">
+      <h4>Online Prescriptions</h4>
+      <img src="images/image5.jpeg" alt="Online Prescriptions" />
+      <p>Get prescriptions for medications after a virtual consultation with your doctor.</p>
+      <button>Request Prescription</button>
+    </div>
+    
+    
+    <div class="services-list">
+      <h4>Medical Records Management</h4>
+      <img src="images/image7.webp" alt="Medical Records Management" />
+      <p>Securely access and manage your medical history and records online anytime.</p>
+      <button>View Records</button>
+    </div>
+    
+    
+    <div class="services-list">
+      <h4>Specialist Referrals</h4>
+      <img src="images/image8.jpg" alt="Specialist Referrals" />
+      <p>Get referred to expert specialists for more detailed consultations and treatments.</p>
+      <button>Get Referred</button>
+    </div>
+
+  </div>
+</section>
+
+<!-------------------------contact us section---------------------------->
 
     <section id="contact" class="contact">
-      <h2>Contact Us</h2>
-      <p>
-        If you want to book your appointment, please fill out the form below for
-        further assistance:
-      </p>
-      <form action="">
-        <label for="Name">Enter your full Name:</label>
-        <input
-          type="text"
-          id="Name"
-          name="Name"
-          placeholder="Enter your full Name"
-          required
-        />
-
-        <label for="PhoneNumber">Enter your Phone Number:</label>
-        <input
-          type="tel"
-          name="PhoneNumber"
-          id="PhoneNumber"
-          placeholder="Enter your phone number"
-          required
-        />
-
-        <label for="Age">Enter your Age:</label>
-        <input
-          type="number"
-          id="Age"
-          name="Age"
-          placeholder="Enter your age"
-          required
-        />
-
-        <label for="date">Date to Book Your Appointment:</label>
-        <input
-          type="datetime-local"
-          id="date"
-          name="date"
-          placeholder="Date to book your appointment:"
-          required
-        />
-
-        <label for="Location">Enter your Location:</label>
-        <input
-          type="text"
-          id="Location"
-          name="Location"
-          placeholder="Enter your location"
-          required
-        />
-
-        <label for="Illness">What are you suffering from?</label>
-        <input
-          type="text"
-          name="Illness"
-          id="Illness"
-          placeholder="What are you suffering from"
-          required
-        />
-
-        <label for="Seriousness">Choose the level of seriousness:</label>
-        <select name="Seriousness" id="Seriousness" required>
-          <option value="Very Serious">Very Serious</option>
-          <option value="Serious">Serious</option>
-          <option value="Mild Serious">Mild Serious</option>
-          <option value="Not Very Serious">Not Very Serious</option>
-        </select>
-
-        <button type="submit">Sign Up</button>
-      </form>
+      <h2 class="title">Contact Us</h2>
+      <div class="contact-section">
+        <p >
+            If you want to book your appointment, please fill out the form below for
+            further assistance:
+          </p>
+          <form action="" class="contact-form">
+            <label for="Name">Enter your full Name:</label>
+            <input
+              type="text"
+              id="Name"
+              name="Name"
+              placeholder="Enter your full Name"
+              required
+            />
+    
+            <label for="PhoneNumber">Enter your Phone Number:</label>
+            <input
+              type="tel"
+              name="PhoneNumber"
+              id="PhoneNumber"
+              placeholder="Enter your phone number"
+              required
+            />
+    
+            <label for="Age">Enter your Age:</label>
+            <input
+              type="number"
+              id="Age"
+              name="Age"
+              placeholder="Enter your age"
+              required
+            />
+    
+            <label for="date">Date to Book Your Appointment:</label>
+            <input
+              type="datetime-local"
+              id="date"
+              name="date"
+              placeholder="Date to book your appointment:"
+              required
+            />
+    
+            <label for="Location">Enter your Location:</label>
+            <input
+              type="text"
+              id="Location"
+              name="Location"
+              placeholder="Enter your location"
+              required
+            />
+    
+            <label for="Illness">What are you suffering from?</label>
+            <input
+              type="text"
+              name="Illness"
+              id="Illness"
+              placeholder="What are you suffering from"
+              required
+            />
+            <label for="Seriousness">Choose the level of seriousness:</label>
+            <select name="Seriousness" id="Seriousness" class="options-area">
+                <option value="Very Serious">Very Serious</option>
+                <option value="Serious">Serious</option>
+                <option value="Mild Serious">Mild Serious</option>
+                <option value="Not Very Serious">Not Very Serious</option>
+            </select>
+            
+           
+    
+            <button type="submit">Sign Up</button>
+          </form>
+      </div>
+      
     </section>
 
     <footer>

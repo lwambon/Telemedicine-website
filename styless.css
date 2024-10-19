@@ -7,6 +7,10 @@ html {
   font-size: 62.5%;
 }
 
+body{
+  background-color:rgb(211, 199, 186);
+}
+
 /*---------------------------header--------------------------*/
 .header-navigation {
   display: flex;
@@ -104,6 +108,141 @@ a:hover {
   box-shadow: 0 0 2rem;
 }
 
+/*------------------------------patients------------------------------------*/
+
+.patients-container {
+  max-width: 120rem;
+  margin: 0 auto;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 3rem;
+}
+
+/* Services Overview */
+.services-overview{
+  align-items: center;
+  justify-content: center;
+  margin: 1.5rem auto;
+  box-shadow: 0 0 2rem;
+  width: 50rem;
+}
+.services-overview h3 {
+  color: #005580;
+  margin: 1.5rem;
+  font-size: 2rem;
+  text-align: center;
+}
+
+.services-overview ul {
+
+  list-style-type: none;
+  padding: 0;
+}
+
+.services-overview ul li {
+  margin: 1.5rem ;
+  font-size: 1.8rem;
+}
+
+.services-overview ul li::before {
+  content: "✔";
+  color: #28a745;
+  margin-right: 1.3rem;
+}
+
+/* Book Appointment Form */
+.book-appointment{
+  align-items: center;
+  justify-content: center;
+  margin: 1.3rem auto;
+}
+.book-appointment h3 {
+  text-align: center;
+  font-size:2rem;
+  text-transform: capitalize;
+  color: #005580;
+  margin-bottom: 1.5rem;
+}
+
+.appointment-form {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+  align-items: center;
+  justify-content: center;
+  margin: 1.7rem auto;
+  width: 70rem;
+  box-shadow: 0 0 2rem;
+}
+
+.appointment-form label {
+  font-weight: bold;
+  margin-left: 1rem;
+  
+}
+
+.appointment-form input,
+.appointment-form select,
+.appointment-form textarea {
+  padding: 1.5rem;
+  border-radius: .5rem;
+  border: transparent;
+  font-size: 1.6rem;
+  width: 98%;
+}
+
+.appointment-form button {
+  background-color: #005580;
+  color: white;
+  padding: 1.2rem 2rem;
+  border: none;
+  border-radius: .5rem;
+  font-size: 1.6rem;
+  cursor: pointer;
+  transition: background-color 0.3s;
+  margin-bottom: 1.7rem;
+}
+
+.appointment-form button:hover {
+  background-color: #003366;
+}
+
+.live-chat{
+  align-items: center;
+  justify-content: center;
+  margin: 1.3rem auto;
+  box-shadow: 0 0 2rem;
+}
+.live-chat h3 {
+  color: #005580;
+  margin: 1.7rem;
+  text-align: center;
+  font-size: 1.7rem;
+}
+
+.live-chat p {
+  font-size: 1.9rem;
+  margin:1.8rem;
+}
+
+.live-chat button {
+  background-color: #28a745;
+  color: white;
+  border: none;
+  border-radius: .4rem;
+  font-size: 1.7rem;
+  cursor: pointer;
+  transition: background-color 0.3s;
+  margin:1.3rem 7rem;
+  align-items: center;
+  justify-content: center;
+}
+
+.live-chat button:hover {
+  background-color: #1f7a33;
+}
+
+
 /*-----------------services----------------------------------*/
 .services-items {
   display: flex;
@@ -141,4 +280,71 @@ a:hover {
   font-size: 1.9rem;
   text-align: justify;
   margin: 1rem;
+}
+.services-list button{
+  align-items: center;
+  justify-content: center;
+  margin: 1rem auto;
+  padding: 1.5rem;
+}
+
+/*---------------------------------contact section----------------------*/
+.contact-section{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    margin: auto;
+}
+.contact-section p {
+    text-transform: capitalize;
+    text-align: center;
+    font-size:2rem;
+    text-shadow: 0 0 2rem;
+}
+
+.contact-form{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 2rem auto;
+    width: 50%;
+    box-shadow: 0 0 1.6rem;
+    gap: 1.5rem;
+    padding: 2rem;
+    border-radius: .5rem;
+}
+label{
+  font-size: 1.2rem;
+}
+input , .options-area{
+    width: 98%;
+    padding:1.5rem;
+    border-radius: .9rem;
+    
+}
+
+button{
+  padding:1.5rem;
+  width: 15rem;
+  background-color: cadetblue;
+  color: #fff;
+  border-radius: .5rem;
+  font-size:1.6rem;
+}
+button:hover{
+  cursor: pointer;
+  transition: .5s;
+  background-color:blue;
+  color: white;
+}
+
+footer{
+  background-color:rgb(68, 64, 64);
+  padding: 2.2rem;
+  text-align:center;
+  color:white;
+  font-size: 1.9rem;
+  max-width: 100%;
 }
